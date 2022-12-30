@@ -43,6 +43,26 @@ $(document).ready(function() {
         });
     });
 
+    // Scroll Efect
 
-    
+    var prevScrollPos = window.pageYOffset;
+
+    window.onscroll = () => {
+
+        // Ocultar y Mostrar menú al hacer scroll
+
+        var currentScrollPos = window.pageYOffset;
+
+        if(prevScrollPos > currentScrollPos){
+            $('.menu').css("top", "0px");
+            $('.menu').css("transition", "0.5s");
+
+        } else {
+            $('.menu').css("top", "-60px");
+            $('.menu').css("transition", "0.5s");
+        }
+
+        prevScrollPos = currentScrollPos;
+    }
+
 });
