@@ -85,5 +85,12 @@ $(document).ready(function() {
         }
     }
 
+    // Función Ir Arriba
+
+    $('.go-top').on('click', function() {
+        $('body, html').animate({
+            scrollTop: "0"
+        }, 500);
+    });
 
 });
