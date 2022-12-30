@@ -51,6 +51,30 @@ body {
 
 /* Fin Ir Arriba */
 
+
+/* Inicio Efecto Skew */
+.skew-abajo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 10vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+}
+
+.skew-arriba {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 10vh 100vw 0 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+    z-index: 10;
+}
+
+/* Fin Efecto Skew */
+
+
 /* Inicio Menú de Navegación */
 #header {
     position: relative;
