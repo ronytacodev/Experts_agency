@@ -21,7 +21,7 @@ body {
 .go-top {
     position: fixed;
     bottom: 100px;
-    right: 0;
+    right: -100%;
     width: 50px;
     height: 50px;
     background: #fff;

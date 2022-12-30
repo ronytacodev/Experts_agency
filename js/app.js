@@ -93,4 +93,12 @@ $(document).ready(function() {
         }, 500);
     });
 
+    // Función Ver Abajo
+
+    $('#abajo').on('click', function() {
+        $('body, html').animate({
+            scrollTop: "650px"
+        }, 500);
+    });
+
 });
