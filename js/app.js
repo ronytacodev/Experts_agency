@@ -18,11 +18,15 @@ $(document).ready(function() {
 
         } else {
             activo = true;
+
+            $('.list-container').animate({
+                left: '-100%'
+            }, 500);
+
+            activo = true;
         }
 
     });
-
-// me quede en el min 1:10:07
 
 
 });
