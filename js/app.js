@@ -8,7 +8,7 @@ $(document).ready(function() {
         // Intercambiar íconos
         $('.btn-menu i').toggleClass('fa-times');
 
-        // Anumación Menú
+        // Animación Menú
         if(activo) {
             $('.list-container').animate({
                 left: '0px'
@@ -28,5 +28,21 @@ $(document).ready(function() {
 
     });
 
+    // Intercambiar clase "Activo" Enlaces menú de navegación
 
+    var enlaces = document.querySelectorAll('.lists li a');
+
+    enlaces.forEach((element) => {
+
+        element.addEventListener('click', (event) => {
+            enlaces.forEach((link) => {
+                link.classList.remove('activo');
+            });
+
+            event.target.classList.add('activo');
+        });
+    });
+
+
+    
 });
