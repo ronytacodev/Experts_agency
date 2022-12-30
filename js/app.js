@@ -63,6 +63,27 @@ $(document).ready(function() {
         }
 
         prevScrollPos = currentScrollPos;
+
+        // Condiciones
+
+        var posicion = window.pageYOffset;
+
+        if(posicion <= 600) {
+            // Ocultar Estilos Menu Scroll
+            $('.menu').css("borderBottom", "none");
+
+            // Ocultar Ir Arriba 
+            $('.go-top').css("right", "-100%");
+
+        } else {
+            // Mostrar Estilos Menu Scroll
+            $('.menu').css("borderBottom", "2px solid #ff2e63");
+
+            // Mostrar Ir Arriba 
+            $('.go-top').css("right", "0");
+            $('.go-top').css("transition", "500ms");
+        }
     }
+
 
 });

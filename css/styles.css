@@ -17,6 +17,40 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
+/* Inicio Ir Arriba */
+.go-top {
+    position: fixed;
+    bottom: 100px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border: 2px solid var(--red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 1000;
+    transition: 0.5s;
+}
+
+.go-top>span:hover {
+    color: var(--white);
+}
+
+.go-top:hover {
+    background: var(--red);
+    color: #fff;
+    border: 2px solid var(--white);
+}
+
+.go-top>span {
+    font-size: 30px;
+    color: var(--black);
+}
+
+/* Fin Ir Arriba */
+
 /* Inicio Menú de Navegación */
 #header {
     position: relative;
